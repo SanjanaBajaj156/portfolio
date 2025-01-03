@@ -476,48 +476,96 @@ body {
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
-    .col {
-        flex: 1 1 100%; /* Ensure columns take full width on smaller screens */
-        padding: 10px;
+    /* Adjusting font size */
+    html {
+        font-size: 50%; /* Slightly smaller font size for mobile */
     }
 
+    /* Header adjustment */
     header {
-        padding: 1rem 5%; /* Reduce padding for a more compact header on small screens */
+        padding: 1rem 5%;  /* Reduced padding for mobile */
+        flex-direction: column;
+        text-align: center;
     }
 
-    nav a {
-        font-size: 1.6rem; /* Adjust the font size of the navigation links */
-        margin-left: 2rem; /* Decrease the margin for better spacing */
+    .logo {
+        font-size: 2.5rem; /* Smaller logo for mobile */
+    }
+
+    nav {
+        display: none; /* Hide the navigation menu by default */
     }
 
     .home-img img {
-        width: 50vw; /* Adjust image size on smaller screens */
+        width: 40vw; /* Make the image smaller */
     }
 
     .home-content h1 {
-        font-size: 3.5rem; /* Make the heading size smaller */
+        font-size: 3.5rem; /* Adjust title font size */
     }
 
     .home-content h3 {
-        font-size: 2rem; /* Adjust subtitle size */
+        font-size: 2rem; /* Adjust subheading font size */
     }
 
-    .social-icons a {
-        width: 3rem;
-        height: 3rem; /* Smaller icons for mobile view */
+    /* About Section */
+    #about .content {
+        max-width: 100%; /* Full width content for mobile */
+        padding: 0 5%;
     }
 
-    .btn {
-        font-size: 1.4rem; /* Adjust button font size */
-        padding: 1rem 2rem;
+    #about .content h2 {
+        font-size: 2.8rem; /* Smaller heading for mobile */
     }
 
-    #about .content p,
-    #education .content p,
-    #projects .project-item p,
-    #contact .content p {
-        font-size: 1.6rem; /* Adjust paragraph font sizes */
+    /* Education Section */
+    #education .edu-list {
+        display: block;
+    }
+
+    #education .edu-item {
+        margin-bottom: 1rem;
+    }
+
+    /* Project Section */
+    .project-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .project-item.square {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+
+    /* Certifications Section */
+    .cert-list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .cert-circle {
+        width: 20rem;
+        height: 20rem;
+        font-size: 1.2rem;
+    }
+
+    /* Contact Section */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1.4rem; /* Adjust input font size */
+    }
+
+    .contact-form button {
+        padding: 1rem 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    /* Footer adjustments if necessary */
+    footer {
+        text-align: center;
+        padding: 2rem;
     }
 }
-
-
