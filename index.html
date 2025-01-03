@@ -10,8 +10,9 @@
 <body>
     <header>
         <a href="#" class="logo">Sanjana Bajaj</a>
-
-        <nav>
+        <div class="hamburger" onclick="toggleNav()">☰</div>
+    
+        <nav id="navbar">
             <a href="#" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#education">Education</a>
@@ -19,7 +20,7 @@
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
+    </header>    
 
     <!-- Home Section -->
     <section class="home" id="home">
@@ -169,6 +170,12 @@
                 learnMoreBtn.textContent = 'Learn More'; // Change button text back to "Learn More"
             }
         });
+
+        function toggleNav() {
+        const nav = document.getElementById('navbar');
+        nav.classList.toggle('open');
+}
+
     </script>
 </body>
 </html>
