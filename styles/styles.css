@@ -451,3 +451,33 @@ a:hover {
     color: white; /* Optional hover color */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .col {
+        flex: 100%;
+    }
+}
+
