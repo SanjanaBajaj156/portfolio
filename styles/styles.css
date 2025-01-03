@@ -486,7 +486,6 @@ body {
         padding: 1rem 5%;  /* Reduced padding for mobile */
         flex-direction: column;
         text-align: center;
-        position: relative; /* Position for the hamburger icon */
     }
 
     .logo {
@@ -494,23 +493,7 @@ body {
     }
 
     nav {
-        display: none; /* Hide the navigation by default */
-        flex-direction: column;
-        width: 100%; /* Ensure it takes full width */
-    }
-
-    nav a {
-        text-align: center;
-        padding: 1rem;
-        font-size: 1.5rem;
-        border-top: 1px solid #ccc;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Show the nav links when the mobile menu is toggled */
-    nav.open {
-        display: flex;
+        display: block; /* Show navigation on mobile */
     }
 
     .home-img img {
@@ -585,15 +568,4 @@ body {
         text-align: center;
         padding: 2rem;
     }
-
-    /* Hamburger Menu */
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        font-size: 2rem;
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
 }
-
