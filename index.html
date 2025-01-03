@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Sanjana Bajaj</a>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="./images/profile.jpg" alt="Profile Image">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Sanjana</span></h1>
+            <h3>Research Enthusiast with a passion for innovation and excellence</h3>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sanjanabajaj" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sanjanabajaj" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/sanjanabajaj" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/sanjana.bajaj15?igsh=MTN1Mm54czF6dHVqYQ==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contact" class="btn">Connect with Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>I'm seeking a position where I can present my ideas and receive career mentoring. I'm passionate about exploring new challenges and continuously learning.</p>
+            <button class="btn" id="learnMoreBtn">Learn More</button>
+            
+            <!-- Hidden content that will be displayed when the "Learn More" button is clicked -->
+            <div id="additionalContent" style="display: none;">
+                <p>
+                    I am a Master of Pharmacy graduate with a strong interest in innovation and problem-solving. I have expertise in team management, project planning, and operational efficiency. I have worked on key projects, including the development of Oral Dispersible Strips and a patented topical formulation. I hold certifications in Psychology Counseling, Lean Six Sigma Green Belt, Product Design, and more. In addition to my academic achievements, I have been involved in extracurricular activities such as volunteering and serving as a coordinator for the Training and Placement Cell.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="content">
+            <h2>Education</h2>
+            <div class="edu-list">
+                <div class="edu-item">
+                    <p>M. Pharm (2021-2023) - Poona College of Pharmacy, BVDU - 8.35 CGPA</p>
+                </div>
+                <div class="edu-item">
+                    <p>B. Pharmacy (2017-2021) - Poona College of Pharmacy, BVDU - 8.43 CGPA</p>
+                </div>
+                <div class="edu-item">
+                    <p>Class XII (2017) - Dayanand Science Junior College, Latur - 71.69%</p>
+                </div>
+                <div class="edu-item">
+                    <p>Class X (2015) - St. Anthony’s English School, Ambajogai - 82.80%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-item square">
+                    <p>Oral Dispersable Strips - A New Approach in Drug Delivery System</p>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-item square">
+                    <p>Patent Granted - “Topical Formulation Comprising Creatine And Preparation Method Thereof”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="content">
+            <h2>Certifications</h2>
+            <div class="cert-list">
+                <div class="cert-circle">
+                    <p>Psychology Counselling<br>NHCA Singapore<br>(Dec 2024)</p>
+                </div>
+                <div class="cert-circle">
+                    <p>Intellectual Property Rights<br>Poona College of Pharmacy<br>(May 2023)</p>
+                </div>
+                <div class="cert-circle">
+                    <p>Lean Six Sigma Green Belt<br>Breath Apex Insight Fellowship Program<br>(Mar 2023)</p>
+                </div>
+                <div class="cert-circle">
+                    <p>Product Design and Innovation<br>NPTEL<br>(Jan 2021)</p>
+                </div>
+                <div class="cert-circle">
+                    <p>Marketing<br>Google Digital Garage<br>(Jan 2020)</p>
+                </div>
+                <div class="cert-circle">
+                    <p>Nutrition and Dietetics<br>Maharashtra Centre for Entrepreneurship Development<br>(Jan 2018)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact">
+    <div class="content">
+        <h2>Contact</h2>
+        <p>If you have any questions or would like to get in touch with me, please feel free to send a message or reach out directly!</p>
+
+        <div class="personal-info">
+            <p><i class="fas fa-envelope"></i> sanjanabajaj11@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> +91 94222 42458</p>
+            <p><i class="fas fa-map-marker-alt"></i> Ambajogai, Maharashtra</p>
+        </div>
+
+        <form class="contact-form" action="mailto:sanjanabajaj11@gmail.com" method="POST" enctype="multipart/form-data">
+            <input type="text" name="senderName" placeholder="Your Name" required>
+            <input type="email" name="senderEmail" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+    <script>
+        // Add active class to clicked nav link and scroll smoothly to section
+        const navLinks = document.querySelectorAll('nav a');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Remove active class from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+
+        // Get the Learn More button and the additional content
+        const learnMoreBtn = document.getElementById('learnMoreBtn');
+        const additionalContent = document.getElementById('additionalContent');
+
+        // Add an event listener to toggle the visibility of the additional content
+        learnMoreBtn.addEventListener('click', () => {
+            if (additionalContent.style.display === 'none') {
+                additionalContent.style.display = 'block';
+                learnMoreBtn.textContent = 'Show Less'; // Change button text when content is shown
+            } else {
+                additionalContent.style.display = 'none';
+                learnMoreBtn.textContent = 'Learn More'; // Change button text back to "Learn More"
+            }
+        });
+    </script>
+</body>
+</html>
