@@ -493,7 +493,7 @@ body {
     }
 
     nav {
-        display: none; /* Hide the navigation menu by default */
+        display: block; /* Show navigation on mobile */
     }
 
     .home-img img {
