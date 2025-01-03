@@ -477,7 +477,47 @@ body {
 /* Media query for mobile devices */
 @media only screen and (max-width: 768px) {
     .col {
-        flex: 100%;
+        flex: 1 1 100%; /* Ensure columns take full width on smaller screens */
+        padding: 10px;
+    }
+
+    header {
+        padding: 1rem 5%; /* Reduce padding for a more compact header on small screens */
+    }
+
+    nav a {
+        font-size: 1.6rem; /* Adjust the font size of the navigation links */
+        margin-left: 2rem; /* Decrease the margin for better spacing */
+    }
+
+    .home-img img {
+        width: 50vw; /* Adjust image size on smaller screens */
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem; /* Make the heading size smaller */
+    }
+
+    .home-content h3 {
+        font-size: 2rem; /* Adjust subtitle size */
+    }
+
+    .social-icons a {
+        width: 3rem;
+        height: 3rem; /* Smaller icons for mobile view */
+    }
+
+    .btn {
+        font-size: 1.4rem; /* Adjust button font size */
+        padding: 1rem 2rem;
+    }
+
+    #about .content p,
+    #education .content p,
+    #projects .project-item p,
+    #contact .content p {
+        font-size: 1.6rem; /* Adjust paragraph font sizes */
     }
 }
+
 
