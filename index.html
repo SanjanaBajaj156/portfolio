@@ -10,7 +10,6 @@
 <body>
     <header>
         <a href="#" class="logo">Sanjana Bajaj</a>
-        <div class="hamburger" onclick="toggleNav()">☰</div>
     
         <nav id="navbar">
             <a href="#" class="active">Home</a>
@@ -20,8 +19,8 @@
             <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>    
-
+    </header>
+    
     <!-- Home Section -->
     <section class="home" id="home">
         <div class="home-img">
@@ -122,25 +121,25 @@
     </section>
 
     <!-- Contact Section -->
-<section id="contact">
-    <div class="content">
-        <h2>Contact</h2>
-        <p>If you have any questions or would like to get in touch with me, please feel free to send a message or reach out directly!</p>
+    <section id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>If you have any questions or would like to get in touch with me, please feel free to send a message or reach out directly!</p>
 
-        <div class="personal-info">
-            <p><i class="fas fa-envelope"></i> sanjanabajaj11@gmail.com</p>
-            <p><i class="fas fa-phone-alt"></i> +91 94222 42458</p>
-            <p><i class="fas fa-map-marker-alt"></i> Ambajogai, Maharashtra</p>
+            <div class="personal-info">
+                <p><i class="fas fa-envelope"></i> sanjanabajaj11@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91 94222 42458</p>
+                <p><i class="fas fa-map-marker-alt"></i> Ambajogai, Maharashtra</p>
+            </div>
+
+            <form class="contact-form" action="mailto:sanjanabajaj11@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="senderName" placeholder="Your Name" required>
+                <input type="email" name="senderEmail" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-
-        <form class="contact-form" action="mailto:sanjanabajaj11@gmail.com" method="POST" enctype="multipart/form-data">
-            <input type="text" name="senderName" placeholder="Your Name" required>
-            <input type="email" name="senderEmail" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</section>
+    </section>
 
     <script>
         // Add active class to clicked nav link and scroll smoothly to section
@@ -170,12 +169,6 @@
                 learnMoreBtn.textContent = 'Learn More'; // Change button text back to "Learn More"
             }
         });
-
-        function toggleNav() {
-        const nav = document.getElementById('navbar');
-        nav.classList.toggle('open');
-}
-
     </script>
 </body>
 </html>
